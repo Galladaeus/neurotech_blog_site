@@ -1,0 +1,26 @@
+#pageWrapper {
+    background-color: aqua;
+}
+
+#navigation {
+    float: left;
+    background-color: blueviolet;
+    width: 35%;
+}
+
+#rightSide {
+    background-color: red;
+    float: left;
+    width: 60%;
+}
+
+#navigation li {
+    background-color: chartreuse;
+    text-align: center;
+    width: 20%;
+    padding-top: 2px;
+}
+
+#navigation li:hover {
+    background-color: coral;
+}
