@@ -1,0 +1,116 @@
+@font-face {
+  font-family: aileron;
+  src: url(fonts/Aileron-Thin.otf);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#pageWrapper {
+    height: 100%;
+}
+
+#rightSide {
+  padding: 0;
+  margin-left: 200px;
+  /*background-color: whitesmoke;/*#092763;*/
+  height: 100%;
+  z-index: 1;
+  /*height: 100%;*/
+}
+
+#rightSide h1 {
+  text-align: center;
+  font-family: aileron;
+}
+
+#rightSide ul {
+  /*
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  */
+  list-style: none;
+  position: sticky;
+}
+
+#rightSide li {
+  /*margin-bottom: 10px;*/
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  height: 200px;
+  /*border: 1px solid black;*/
+  margin: auto;
+  width: 20%;
+  /*background-color: green;*/
+}
+
+#navigation {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-left: 20px solid black;
+    border-right: 1px solid black;
+    width: 10%;
+    height: 100%;
+    min-height: 820px;
+}
+
+#navigation img {
+  background-color: whitesmoke;
+  border-radius: 100px 50px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+#navigation ul {
+    /*text-align: center;*/
+    list-style: none;
+    /*display: inline-block;*/
+    /*background-color: gray;*/
+    padding-left: 0px;
+    width: 100%;
+}
+
+#navigation li {
+    text-align: center;
+    font-family: aileron;
+    font-size: 25px;
+    color: black;
+    /*background-color: chartreuse;*/
+    /*border: 2px black double;*/
+    /*width: 40%;*/
+    margin-bottom: 10%;
+    padding: .2em .8em;
+    padding-left: 0px;
+    transition: all .5s ease-in;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation li:hover {
+    background-color: black;
+    border-radius: 0px 10px;
+    color: white;
+    box-shadow: gray;
+    transform: translateX(5px);
+}
+
+#blogBox {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}

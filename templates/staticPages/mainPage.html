@@ -11,7 +11,7 @@
 
         <ul>
             <li>About</li>
-            <li>Posts</li>
+            <li><a href="{% url 'BlogPosts:post_view' %}">Posts</a></li>
             <li>Archive</li>
             <li>Contact</li>
         </ul>
@@ -22,5 +22,9 @@
             This side is for links to the blog posts
             Why is this not changing
         </p>
+
+        <ul>
+            <div id="box">testBox</div>
+        </ul>
     </div>
 </div>

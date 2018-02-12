@@ -1,4 +1,4 @@
-    #pageWrapper {
+#pageWrapper {
     background-color: aqua;
 }
 
@@ -31,7 +31,21 @@
     padding: .2em .8em;
 }
 
+#navigation li:visited {
+    list-style: none;
+    background-color: black;
+}
+
 #navigation li:hover {
-    background-color: coral;
+    background-color: pink;
     box-shadow: gray;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    float: left;
+    margin: auto;
+    width: 25%;
 }
