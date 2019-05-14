@@ -8,15 +8,18 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+
+  background: url(images/test_background.svg);
+  background-repeat: repeat;
 }
 
 #pageWrapper {
     height: 100%;
+    transition: all .5s ease-in;
 }
 
 #rightSide {
   padding: 0;
-  margin-left: 200px;
   /*background-color: whitesmoke;/*#092763;*/
   height: 100%;
   z-index: 1;
@@ -46,55 +49,41 @@ html, body {
   /*margin-bottom: 10px;*/
   padding-bottom: 2em;
   padding-top: 2em;
+  padding: 2em;
   text-align: center;
   height: 200px;
   /*border: 1px solid black;*/
   margin: auto;
   width: 20%;
-  /*background-color: green;*/
+  background-color: green;
+}
+
+#rightSide h4 {
+  background-color: black;
+  color: white;
 }
 
 #navigation {
-    float: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-left: 20px solid black;
-    border-right: 1px solid black;
-    width: 10%;
-    height: 100%;
-    min-height: 820px;
+  min-width: 1080px;
 }
 
-#pageWrapper img {
-  background-color: whitesmoke;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 25px;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  position: relative;
-  left: 42%;
+#navigation img {
   top: 0;
   z-index: 2;
-  margin-left: 20px;
-  clear: both;
-
   transition: all .5s ease-in;
 }
 
-#pageWrapper img:hover {
-  background-color: black;
-}
-
 #navigation ul {
-    /*text-align: center;*/
-    list-style: none;
-    /*display: inline-block;*/
-    /*background-color: gray;*/
-    padding-left: 0px;
-    width: 100%;
-    padding-top: 350px;
+  /*border-top: 10px solid black;*/
+  display: table;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  list-style: none;
+  background: white;
 }
 
 #navigation li {
@@ -102,26 +91,22 @@ html, body {
     font-family: aileron;
     font-size: 25px;
     color: black;
-    /*background-color: chartreuse;*/
-    /*border: 2px black double;*/
-    /*width: 40%;*/
-    margin-bottom: 10%;
-    padding: .2em .8em;
-    padding-left: 0px;
-    transition: all .5s ease-in;
+    float: left;
+    transition: all .2s ease-in;
+    padding: 15px;
 }
 
 #navigation a {
-  text-decoration: none;
   color: black;
 }
 
 #navigation li:hover {
-    background-color: black;
-    border-radius: 0px 10px;
-    color: white;
+    /*background-color: black;*/
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: red;
     box-shadow: gray;
-    transform: translateX(5px);
+    /*transform: translateY(5px);*/
 }
 
 #blogBox {
